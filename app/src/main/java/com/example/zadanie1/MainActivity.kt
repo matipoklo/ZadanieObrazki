@@ -19,34 +19,30 @@ class MainActivity : AppCompatActivity() {
         kolejny.setOnClickListener {
             zdj++
             if (zdj == 1) {
-                findViewById<ImageView>(R.id.img).setImageResource(R.drawable.pobrane__2_)
+                findViewById<ImageView>(R.id.img).setImageResource(R.drawable.dwa)
             } else if (zdj == 2) {
-                findViewById<ImageView>(R.id.img).setImageResource(R.drawable.images)
+                findViewById<ImageView>(R.id.img).setImageResource(R.drawable.trzy)
             } else if (zdj == 3) {
-                findViewById<ImageView>(R.id.img).setImageResource(R.drawable.pobrane__1_)
+                findViewById<ImageView>(R.id.img).setImageResource(R.drawable.er)
             } else if (zdj == 4) {
-                findViewById<ImageView>(R.id.img).setImageResource(R.drawable.pobrane)
+                findViewById<ImageView>(R.id.img).setImageResource(R.drawable.jeden)
             } else if (zdj == 0) {
-                findViewById<ImageView>(R.id.img).setImageResource(R.drawable.pobrane__2_)
+                findViewById<ImageView>(R.id.img).setImageResource(R.drawable.dwa)
                 zdj = 1;
-            } else if (zdj == 5) {
-                findViewById<ImageView>(R.id.img).setImageResource(R.drawable.pobrane__2_)
-                zdj = 1;
-            }
 
         }
 
         poprzedni.setOnClickListener {
             zdj--
             if (zdj == 1 || zdj == 0) {
-                findViewById<ImageView>(R.id.img).setImageResource(R.drawable.pobrane__2_)
+                findViewById<ImageView>(R.id.img).setImageResource(R.drawable.dwa)
                 zdj = 4
             } else if (zdj == 2) {
-                findViewById<ImageView>(R.id.img).setImageResource(R.drawable.images)
+                findViewById<ImageView>(R.id.img).setImageResource(R.drawable.jeden)
             } else if (zdj == 3) {
-                findViewById<ImageView>(R.id.img).setImageResource(R.drawable.pobrane__1_)
+                findViewById<ImageView>(R.id.img).setImageResource(R.drawable.er)
             } else if (zdj == 4) {
-                findViewById<ImageView>(R.id.img).setImageResource(R.drawable.pobrane)
+                findViewById<ImageView>(R.id.img).setImageResource(R.drawable.trzy  )
             }
         }
             val osx = findViewById<Button>(R.id.bt)
@@ -55,4 +51,5 @@ class MainActivity : AppCompatActivity() {
             findViewById<ImageView>(R.id.img).setRotationX(dane.toFloat())
         }
     }
+}
 }
